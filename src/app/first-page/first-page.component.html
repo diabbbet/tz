@@ -1,0 +1,16 @@
+<div class="flex-wrapper">
+	<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+
+		<div class="field">
+			<input type="text" formControlName="name" placeholder="Имя">
+		</div>
+
+		<div class="field">
+			<input type="number" formControlName="age" placeholder="Возраст">
+		</div>
+
+		<button type="submit" [disabled]="!userForm.valid">Далее</button>
+
+	</form>
+</div>
